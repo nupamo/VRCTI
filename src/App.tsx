@@ -4,6 +4,7 @@ import { Share2, RotateCcw, Copy, Github, Monitor } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { questions } from './data/questions';
 import { results } from './data/results';
+import { indicatorDescriptions } from './data/indicators';
 
 export default function App() {
   const [step, setStep] = useState<'start' | 'test' | 'result'>('start');
@@ -177,6 +178,27 @@ export default function App() {
             <p className="text-gray-300 mb-8 leading-relaxed text-left bg-black/30 p-4 rounded-lg border border-white/5">
               {currentResult.description}
             </p>
+
+            <div className="text-left mb-8 space-y-4">
+              <h3 className="text-vrc-neon text-xs font-bold uppercase tracking-wider">성격 지표 분석</h3>
+              <div className="grid grid-cols-1 gap-2">
+                {resultCode.split('').map((char, idx) => {
+                  const info = indicatorDescriptions[char];
+                  if (!info) return null;
+                  return (
+                    <div key={idx} className="bg-white/5 p-3 rounded-xl border border-white/5 flex gap-3 items-center">
+                      <div className="w-8 h-8 rounded-lg bg-vrc-neon/10 flex items-center justify-center text-vrc-neon font-mono font-bold shrink-0 border border-vrc-neon/20">
+                        {char}
+                      </div>
+                      <div>
+                        <div className="text-[10px] font-bold text-vrc-neon uppercase tracking-tighter leading-none mb-1">{info.name}</div>
+                        <div className="text-xs text-gray-400 leading-tight">{info.description}</div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
 
             <div className="text-left mb-8">
               <h3 className="text-vrc-neon text-xs font-bold uppercase tracking-wider mb-2">추천 아바타 스타일</h3>

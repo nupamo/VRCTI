@@ -5,9 +5,9 @@
 각 질문의 점수를 합산하여 4가지 척도 중 하나를 결정함:
 
 - E (Explorer) vs I (Inside): 퍼블릭/새로운 만남 vs 지인/프라이빗 공간 선호
+- S (Sync) vs C (Concept): 현실 자아 투영 vs 캐릭터 페르소나 유지
 - D (Deep) vs G (Gamer): 감정적/신체적 깊은 몰입 vs 시스템적/관조적 태도
-- F (Friendly) vs C (Creator): 정서적 교류/친목 vs 아바타 제작/사진 촬영 등 창작 활동
-- S (Sync) vs P (Persona): 현실 자아 투영 vs 캐릭터 페르소나 유지
+- A (Adapt) vs U (Unique): 트렌드/분위기 적응 vs 개성/창작 활동 중시
 
 2. 핵심 기능 요구사항
 

@@ -72,10 +72,10 @@ export default function App() {
     };
 
     const res = [
-      getCode('D', 'G', getIndicatorAvg('D', 'G')),
       getCode('E', 'I', getIndicatorAvg('E', 'I')),
-      getCode('F', 'C', getIndicatorAvg('F', 'C')),
-      getCode('S', 'P', getIndicatorAvg('S', 'P'))
+      getCode('S', 'C', getIndicatorAvg('S', 'C')),
+      getCode('D', 'G', getIndicatorAvg('D', 'G')),
+      getCode('A', 'U', getIndicatorAvg('A', 'U'))
     ].join('');
 
     setResultCode(res);

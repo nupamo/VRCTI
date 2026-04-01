@@ -7,7 +7,6 @@ export interface Question {
 export const questions: Question[] = [
   // S (Sync) vs C (Concept)
   { indicator: 'S', text: "나는 인게임에서도 내 실제 목소리와 성격을 그대로 사용하는 편이다." },
-  { indicator: 'S', text: "내 아바타는 내 현실 성별이나 특징을 반영하고 있다." },
   { indicator: 'S', text: "생긴게 달라도 가상 세계의 나도 결국 나라고 생각한다." },
   { indicator: 'C', text: "서로의 현실 정보를 나누는게 불편하다." },
   { indicator: 'S', text: "현실의 지인이 내 VRChat 플레이를 봐도 부끄럽지 않다." },
